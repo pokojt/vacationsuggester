@@ -8,14 +8,14 @@ $(document).ready(function() {
       total += array[i];
       console.log(total);
     }
-    
-    if (total < 6) {
+
+    if (total < 9) {
       hideAll();
       $("#banfAnswer").show();
-    }else if (total > 5 && total < 9) {
+    }else if (total > 8 && total < 12) {
       hideAll();
       $("#costaAnswer").show();
-    }else if (total > 8 && total <16) {
+    }else if (total > 11 && total <16) {
       hideAll();
       $("#italyAnswer").show();
     }else {
