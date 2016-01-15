@@ -1,6 +1,6 @@
-.result {
+/*.result {
   display: none;
-}
+}*/
 
 .about {
   text-align: left;
@@ -16,33 +16,31 @@
   text-align: center;
 }
 
-.carousel {
-  max-height: 400px;
+.jumbotron {
+  background-color: lightgray;
+  height: 400px;
 }
 
-.carousel img {
-  max-height: 400px;
-  width: auto;
+
+.input_hidden {
+  position: abosolute;
+  left: -9999px;
+}
+.selected {
+  border:2px solid lightgray;
+  background-color: lightgray;
 }
 
-/*.item {
-  width: 80%;
-  height: auto;
-  border: 10px;
-  margin: 20px;
-}*/
+#blanks label {
+  display: inline-block;
+  cursor: pointer;
+}
 
-label > input{ /* HIDE RADIO */
-  visibility: hidden; /* Makes input not-clickable */
-  position: absolute; /* Remove input from document flow */
+#blanks label img {
+  padding: 3px;
 }
-label > input + img{ /* IMAGE STYLES */
-  cursor:pointer;
-  border:2px solid transparent;
-}
-label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border:2px solid green;
-}
+
+
 
 img {
   width: 100%;

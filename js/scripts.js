@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  $('#blanks input:radio').addClass('input_hidden');
+  $('#blanks label').click(function(){
+    $(this).addClass('selected').siblings().removeClass('selected');
+});
+
   $("#blanks form").submit(function(event){
 
     var blanksArray = ["place", "dinner", "night", "activity", "spirit"];
@@ -14,27 +19,19 @@ $(document).ready(function() {
     // console.log(total);
 
     blanksArray.forEach(function(blank) {
-      userAnswer += parseInt($(".radio:checked" + blank).val());
+      userAnswer += parseInt($(".input:checked" + blank).val());
     });
 
     if (userAnswer < 6) {
-      hideAll();
-      $("#banf").show();
+      $("#banfAnswer").show();
     }
-    else if (userAnswer > 5 && total < 11) {
-      hideAll();
-      $("#costa").show();
+    else if (userAnswer > 5 && total < 11) {}
+      $("#costaAnswer").show();
     }
     else if (userAnswer > 10 && total <16) {
-      hideAll();
-      $("#italy").show();
+      $("#italyAnswer").show();
     }
 
-    function hideAll(argument) {
-     $("#banf").hide();
-     $("#costa").hide();
-     $("#italy").hide();
-    }
 
     event.preventDefault();
   });

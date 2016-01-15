@@ -19,7 +19,7 @@ CSS
 Bootstrap
 Javascript
 jQuery
-giHub and gitHub Pages
+gitHub and gitHub Pages
 
 ##Legal
 
