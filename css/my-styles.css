@@ -1,6 +1,6 @@
-/*.result {
+.result {
   display: none;
-}*/
+}
 
 .about {
   text-align: left;
@@ -19,6 +19,7 @@
 .jumbotron {
   background-color: lightgray;
   height: 400px;
+  
 }
 
 
@@ -38,6 +39,7 @@
 
 #blanks label img {
   padding: 3px;
+  padding-right: 20px;
 }
 
 
