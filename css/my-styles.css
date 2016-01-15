@@ -1,0 +1,47 @@
+.result {
+  display: none;
+}
+
+.about {
+  text-align: left;
+}
+
+.footer {
+  background-color: lightgray;
+  margin-top: 50px;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+}
+
+.carousel {
+  max-height: 400px;
+}
+
+/*.item {
+  width: 80%;
+  height: auto;
+  border: 10px;
+  margin: 20px;
+}*/
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid green;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  max-width: 400px;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vacation Suggester</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    <link href="css/my-styles.css" rel="stylesheet" type="text/css" media="all"></a>
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+
+  <!--navbar -
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand text-muted" href="#">Vacation Suggester</a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="vacationsuggester/index.html">Quiz</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Canada</a></li>
+                  <li><a href="#">Costa Rica</a></li>
+                  <li><a href="#">Italy</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Plans &amp; Pricing</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+  <!--Carousel - images of vacation destinations? Make carousel caption that names the quiz-->
+
+    <div id="myCarousel" class="carousel slide jumbotron" data-ride="carousel" data-interval="3000">
+       <div class="container">
+         <ol class="carousel-indicators">
+           <li class="active" data-target="#myCarousel" data-slide-2="0"></li>
+           <li data-target="#myCarousel" data-slide-2="1"></li>
+           <li data-target="#myCarousel" data-slide-2="2"></li>
+         </ol>
+           <div class="carousel-inner">
+             <div class="item active">
+               <img src="img/vacation1.jpg">
+               <div class="container">
+                 <div class="carousel-caption">
+                    <h1>Find your dream vacation</h1>
+                    <h3><em>with Vacation Suggester</em></h3>
+                    <p>
+                    <a class="btn btn-primary btn-lg" data-toggle="modal" href="#textModal">Button?</a>
+                   </p>
+                 </div>
+               </div>
+             </div>
+             <div class="item">
+               <img src="img/vacation2.jpg">
+             </div>
+             <div class="item">
+               <img src="img/vacation3.jpg">
+             </div>
+           </div>
+           <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+             <span class="icon-prev"></span>
+           </a>
+           <a class="right carousel-control" href="#myCarousel" data-slide="next">
+             <span class="icon-next"></span>
+           </a>
+         </div>
+
+
+  <!--content - a header, info section, followed by quiz questions and answers: maybe in buzzfeed style?-->
+    <div class="container">
+      <p class="lead">Since 2016, we've been helping people choose, plan, and finance the vacation of their dreams.</p>
+      <h3><em>Take our quiz below to find yours!</em></h3>
+    </div>
+    <div class="container">
+      <h2 class="question">In which of these places would you rather be?</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <img src="img/banf1.jpeg">
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <img src="img/costa1.jpeg">
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <img src="img/tuscany.jpeg">
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="container">
+     <h2 class="question">What would you rather eat for dinner?</h2>
+     <div class="row">
+       <div class="col-sm-4">
+         <div class="radio">
+           <label>
+             <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+             <img src="img/costarican.jpg">
+           </label>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="radio">
+           <label>
+             <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+             <img src="img/italian.jpeg">
+           </label>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="radio">
+           <label>
+             <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+             <img src="img/canadian.jpeg">
+           </label>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="container">
+     <h2 class="question">What kind of night life are you looking for?</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <img src="img/dance.jpg">
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <img src="img/camping.jpg">
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <img src="img/beachbar.jpg">
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="question">Which of these activities would you rather do?</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <img src="img/hiking.jpg">
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <img src="img/rafting.jpg">
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <img src="img/museum.jpg">
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="question">What is your spirit animal?</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <img src="img/sloth.jpeg">
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <img src="img/bear.jpg">
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <img src="img/wine.jpg">
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Results! To be hidden until quiz is taken. -->
+
+    <div class="container">
+      <div id="banf" class="result">
+        <h2>Your Dream Vacation</h2>
+        <h3>Based on your quiz results, we suggest you take your next trip to the <strong>B A National Forest in Canada</strong>!</h3>
+        <img src="img/">
+        <p>You love hiking, camping, and adventure! </p>
+      </div>
+      <div id="costa" class="result">
+        <h2>Your Dream Vacation</h2>
+        <h3>Based on your quiz results, we suggest you take your next trip to beautiful <strong>Costa Rica</strong>!</h3>
+        <img src="img/">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+      <div id="italy" class="result">
+        <h2>Your Dream Vacation</h2>
+        <h3>Based on your quiz results, we suggest you take your next trip to <strong>Italy</strong>!</h3>
+        <img src="img/">
+        <p>Ah, la vita dolce! You are truly a lover of the sweet things in life. It's no secret you like wine. </p>
+      </div>
+    </div>
+
+
+  <!-- footer - info about page? -->
+
+
+    <div class="footer">
+      <div class="container">
+        <div class="about">
+          <h3>About</h3>
+            <p>This Vacation Suggester was created by Taylor using HTML, CSS with Bootstrap, and Javascript with jQuery.</p>
+            <br></br>
+            <p>Copyright &copy; 2016 Taylor Pokoj
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
