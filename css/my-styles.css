@@ -17,6 +17,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .input_hidden {
   position: abosolute;
   left: -9999px;

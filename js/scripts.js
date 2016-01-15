@@ -8,7 +8,7 @@ $(document).ready(function() {
       total += array[i];
       console.log(total);
     }
-
+    
     if (total < 6) {
       hideAll();
       $("#banfAnswer").show();
@@ -22,14 +22,11 @@ $(document).ready(function() {
       hideAll();
       alert("Please answer all of the questions!")
     }
-
     function hideAll(argument) {
       $("#banfAnswer").hide();
       $("#costaAnswer").hide();
       $("#italyAnswer").hide();
     }
-
-
     event.preventDefault();
   });
 });
