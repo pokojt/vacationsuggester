@@ -1,27 +1,25 @@
 $(document).ready(function() {
-
-  $('#blanks input:radio').addClass('input_hidden');
-  $('#blanks label').click(function(){
-    $(this).addClass('selected').siblings().removeClass('selected');
-  });
+  // $('#blanks input:radio').addClass('input_hidden');
+  // $('#blanks label').click(function(){
+  //   $(this).addClass('selected').siblings().removeClass('selected');
+  // });
 
   $("form#questions").submit(function(event) {
 
-    // var blanksArray = ["place", "dinner", "night", "activity", "spirit"];
-    // var userAnswer = 0
+    // var blanks = ["place", "dinner", "night", "activity", "spirit"];
+    // var total = 0
     //
-    // blanksArray.forEach(function(blank) {
-    //   userAnswer += parseInt($(".input:checked" + blank).val());
+    // blanks.forEach(function(blank) {
+    //   total += parseInt($("." + blank).val());
     // });
 
-    var array = [parseInt($('input[name=place]:selected').val()), parseInt($('input[name=dinner]:selected').val()), parseInt($('input[name=night]:selected').val()), parseInt($('input[name=activity]:selected').val()), parseInt($('input[name=spirit]:selected').val())];
+    var array = [parseInt($('input[name=place]:checked').val()), parseInt($('input[name=dinner]:checked').val()), parseInt($('input[name=night]:checked').val()), parseInt($('input[name=activity]:checked').val()), parseInt($('input[name=spirit]:checked').val())];
     var total = 0;
 
     for (var i = 0; i < array.length; i++) {
       total += array[i];
+      console.log(total);
     }
-
-    console.log(total);
 
     if (total < 6) {
       hideAll();
