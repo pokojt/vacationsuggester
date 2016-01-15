@@ -75,6 +75,7 @@
              <span class="icon-next"></span>
            </a>
          </div>
+      </div>
 
 
   <!--content - a header, info section, followed by quiz questions and answers: maybe in buzzfeed style?-->
@@ -83,148 +84,155 @@
       <h3><em>Take our quiz below to find yours!</em></h3>
     </div>
     <div class="container">
-      <h2 class="question">In which of these places would you rather be?</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="banf" value="1">
-              <img src="img/banf1.jpeg">
-            </label>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <h2>In which of these places would you rather be?</h2>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="place">
+                    <input type="radio" name="place" id="banf" value="1" checked>
+                    <img src="img/banf1.jpeg">
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="place">
+                    <input type="radio" name="place" id="costa" value="2">
+                    <img src="img/costa1.jpeg">
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="place">
+                    <input type="radio" name="place" id="italy" value="3">
+                    <img src="img/tuscany.jpeg">
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="costa" value="3">
-              <img src="img/costa1.jpeg">
-            </label>
+          <div class="container">
+           <h2>What would you rather eat for dinner?</h2>
+           <div class="row">
+             <div class="col-sm-4">
+               <div class="radio">
+                 <label for="dinner">
+                   <input type="radio" name="dinner" id="costa" value="2" checked>
+                   <img src="img/costarican.jpg">
+                 </label>
+               </div>
+             </div>
+             <div class="col-sm-4">
+               <div class="radio">
+                 <label for="dinner">
+                   <input type="radio" name="dinner" id="italy" value="3">
+                   <img src="img/italian.jpeg">
+                 </label>
+               </div>
+             </div>
+             <div class="col-sm-4">
+               <div class="radio">
+                 <label for="dinner">
+                   <input type="radio" name="dinner" id="banf" value="1">
+                   <img src="img/canadian.jpeg">
+                 </label>
+               </div>
+             </div>
+           </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="italy" value="5">
-              <img src="img/tuscany.jpeg">
-            </label>
+          <div class="container">
+           <h2>What kind of night life are you looking for?</h2>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="night">
+                    <input type="radio" name="answer" id="italy" value="3" checked>
+                    <img src="img/dance.jpg">
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="night">
+                    <input type="radio" name="answer" id="banf" value="1">
+                    <img src="img/camping.jpg">
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="night">
+                    <input type="radio" name="answer" id="costa" value="2">
+                    <img src="img/beachbar.jpg">
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-   <div class="container">
-     <h2 class="question">What would you rather eat for dinner?</h2>
-     <div class="row">
-       <div class="col-sm-4">
-         <div class="radio">
-           <label>
-             <input type="radio" name="answer" id="costa" value="3">
-             <img src="img/costarican.jpg">
-           </label>
-         </div>
-       </div>
-       <div class="col-sm-4">
-         <div class="radio">
-           <label>
-             <input type="radio" name="answer" id="italy" value="5">
-             <img src="img/italian.jpeg">
-           </label>
-         </div>
-       </div>
-       <div class="col-sm-4">
-         <div class="radio">
-           <label>
-             <input type="radio" name="answer" id="banf" value="1">
-             <img src="img/canadian.jpeg">
-           </label>
-         </div>
-       </div>
-     </div>
-   </div>
-   <div class="container">
-     <h2 class="question">What kind of night life are you looking for?</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="italy" value="5">
-              <img src="img/dance.jpg">
-            </label>
+          <div class="container">
+            <h2>Which of these activities would you rather do?</h2>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="activity">
+                    <input type="radio" name="activity" id="banf" value="1" checked>
+                    <img src="img/hiking.jpg">
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="activity">
+                    <input type="radio" name="activity" id="costa" value="2">
+                    <img src="img/rafting.jpg">
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="activity">
+                    <input type="radio" name="activity" id="italy" value="3">
+                    <img src="img/museum.jpg">
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="banf" value="1">
-              <img src="img/camping.jpg">
-            </label>
+          <div class="container">
+            <h2>What is your spirit animal?</h2>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="spirit">
+                    <input type="radio" name="answer" id="costa" value="2" checked>
+                    <img src="img/sloth.jpeg">
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="spirit">
+                    <input type="radio" name="answer" id="banf" value="1">
+                    <img src="img/bear.jpg">
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="radio">
+                  <label for="spirit">
+                    <input type="radio" name="answer" id="italy" value="3">
+                    <img src="img/wine.jpg">
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="costa" value="3">
-              <img src="img/beachbar.jpg">
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <h2 class="question">Which of these activities would you rather do?</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="banf" value="1">
-              <img src="img/hiking.jpg">
-            </label>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="costa" value="3">
-              <img src="img/rafting.jpg">
-            </label>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="italy" value="5">
-              <img src="img/museum.jpg">
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <h2 class="question">What is your spirit animal?</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="costa" value="3">
-              <img src="img/sloth.jpeg">
-            </label>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="banf" value="1">
-              <img src="img/bear.jpg">
-            </label>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="answer" id="italy" value="5">
-              <img src="img/wine.jpg">
-            </label>
-          </div>
-        </div>
+          <button type="submit" class="btn btn-primary">Find my dream vacation!</button>
+        </form>
       </div>
     </div>
 
