@@ -1,28 +1,22 @@
-/*.result {
-  display: none;
-}*/
-
 .about {
   text-align: left;
 }
-
 .footer {
   background-color: lightgray;
   margin-top: 50px;
 }
-
 .container {
   align-items: center;
   text-align: center;
 }
 
 .jumbotron {
+  background-image: url("../img/beach.jpg");
   background-color: lightgray;
   height: 400px;
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-
 .input_hidden {
   position: abosolute;
   left: -9999px;
@@ -34,7 +28,6 @@
 
 #blanks label {
   display: inline-block;
-  cursor: pointer;
 }
 
 #blanks label img {
@@ -42,15 +35,12 @@
   padding-right: 20px;
 }
 
-
-
 img {
   width: 100%;
   height: auto;
   vertical-align: middle;
   max-width: 400px;
 }
-
 
 #costaAnswer {
   display: none;

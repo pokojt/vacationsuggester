@@ -1,17 +1,5 @@
 $(document).ready(function() {
-  // $('#blanks input:radio').addClass('input_hidden');
-  // $('#blanks label').click(function(){
-  //   $(this).addClass('selected').siblings().removeClass('selected');
-  // });
-
   $("form#questions").submit(function(event) {
-
-    // var blanks = ["place", "dinner", "night", "activity", "spirit"];
-    // var total = 0
-    //
-    // blanks.forEach(function(blank) {
-    //   total += parseInt($("." + blank).val());
-    // });
 
     var array = [parseInt($('input[name=place]:checked').val()), parseInt($('input[name=dinner]:checked').val()), parseInt($('input[name=night]:checked').val()), parseInt($('input[name=activity]:checked').val()), parseInt($('input[name=spirit]:checked').val())];
     var total = 0;
