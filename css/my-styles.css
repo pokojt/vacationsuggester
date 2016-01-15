@@ -20,6 +20,11 @@
   max-height: 400px;
 }
 
+.carousel img {
+  max-height: 400px;
+  width: auto;
+}
+
 /*.item {
   width: 80%;
   height: auto;
